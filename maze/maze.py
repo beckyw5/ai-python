@@ -1,7 +1,7 @@
-
+import sys
 
 class StackFrontier():
-    def __int__(self):
+    def __init__(self):
         self.frontier = []
 
     def add(self, node):
@@ -31,4 +31,4 @@ class QueueFrontier(StackFrontier):
             return node
 
 class Maze():
-    def __int__(self, filename):
+    def __init__(self, filename):
