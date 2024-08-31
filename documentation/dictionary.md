@@ -6,8 +6,16 @@ Actions
 Agent 
 - entity that perceives its environment and acts upon that environment. 
 
+Breadth-First Search (BFS)
+- is a search algorithm.
+- which always expands the shallowest node in the frontier.
+
+Depth-First Search (DFS)
+- is a search algorithm.
+- that always expands the deepest node in the frontier.
+
 Expand the Node
-- Look at all the neighbours of that node
+- Look at all the neighbours of that node. 
 
 Frontier 
 - represents all the options we could explore next, that we haven't yet explored.
@@ -35,8 +43,16 @@ Optimal solution
 Path cost
 - numerical cost associated with a given path.
 
+Queue 
+- first-in first-out
+- the first node added to the frontier, will be the first node we remove and explore
+
 Solution
 - a sequence of actions that leads from the inital state to the goal state.
+
+Stack
+- last-in first-out data type
+- the last thing I add to the frontier, will be the first thing I remove from the frontier.
 
 State 
 - a configuration for the agent and its environment. 
