@@ -9,6 +9,9 @@ Agent
 Goal test
 - a way to determine whether a given state is a goal state.s
 
+Natual language
+- understanding actual languages, not programming languages 
+
 Path cost
 - numerical cost associated with a given path.
 
