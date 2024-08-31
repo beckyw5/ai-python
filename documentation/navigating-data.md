@@ -23,7 +23,7 @@ class StackFrontier():      // Class
         self.frontier.append(node)  // Appended to the end of the list
     
     def remove(self):
-        node = self.frontier[-1]            // Removed the last item from the list
+        node = self.frontier[-1]           // Get the last node from the frontier
         self.frontier = self.frontier[:1]  // Updates the frontier, to remove the last item from the frontier
         return node
 ```
@@ -32,6 +32,14 @@ Queue
 - first-in first-out data type
 - meaning the first node added to the frontier, will be the first node we explore
 - the nodes affectively form a line or a queue
+
+```python
+class QueueFrontier(StackFrontier):  // Class, inheriting from the StackFrontier, which means it can do everything within the StackFrontier Class.
+     def remove(self): // Redefining how we remove a node from the frontier
+        node = self.frontier[0]            // Get the first node in the frontier
+        self.frontier = self.frontier[1:]  // Updates the frontier, to remove the first item from the frontier
+        return node
+```
 
 ### Retrieving Data Techniques
 First item
