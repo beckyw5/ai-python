@@ -13,8 +13,29 @@ Depth-First Search (DFS)
 Stack
 - last-in first-out data type
 - meaning the last node added to the frontier, will be the first thing removed from the frontier
+- below is an example of an implementation of a Frontier as a Stack
+```python
+class StackFrontier():      // Class
+    def __init__(self):     // Function 
+        self.frontier = []  // empty list
+ 
+    def add(self, node):    // Function 
+        self.frontier.append(node)  // Appended to the end of the list
+    
+    def remove(self):
+        node = self.frontier[-1]            // Removed the last item from the list
+        self.frontier = self.frontier[:1]  // Updates the frontier, to remove the last item from the frontier
+        return node
+```
 
 Queue
 - first-in first-out data type
 - meaning the first node added to the frontier, will be the first node we explore
 - the nodes affectively form a line or a queue
+
+### Retrieving Data Techniques
+First item
+- To get the first item `[0]`
+
+Last item
+- To get the last item in a list in Python you use `[-1]`

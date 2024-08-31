@@ -10,6 +10,20 @@ Breadth-First Search (BFS)
 - is a search algorithm.
 - which always expands the shallowest node in the frontier.
 
+Class
+- is a way to generate objects in Python
+    ```python
+    class StackFrontier():      // Class
+        def __init__(self):     // Function 
+            self.frontier = []  // empty list
+     
+        def add(self, node):    // Function 
+            self.frontier.append(node)
+    ```
+- it refers to Object-Oriented Programming, where the idea here is I want to create an object
+  that is able to store all my Frontier Data. And I would like to have functions, also known as
+  methods, that I can use to manipulate the object.
+
 Depth-First Search (DFS)
 - is a search algorithm.
 - that always expands the deepest node in the frontier.
@@ -26,6 +40,9 @@ Goal test
 
 Inital stage
 - the starting point where the agent begins.
+
+Methods
+- Functions which are used to manipulate the object.
 
 Natual language
 - understanding actual languages, not programming languages.
